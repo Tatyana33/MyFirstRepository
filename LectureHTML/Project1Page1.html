@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Изучаем HTML (Страница1)</title>
+</head>
+<body>
+<h1>Пробуем делать формы</h1>
+
+<form action="/hahdler.php" method="post">
+    <p>Введите имя</p>
+    <input type="text"/>
+    <br/><br/>
+    <label>Введите телефон (10 цифр без пробелов)<input type="tel" name="phone" pattern="[0-9]{10}"/>
+    </label>
+
+    <p>
+        Какой Вам нужен питомец:
+        <label><input checked="checked" type="radio" value="dog" name="pet">Собака</label>
+        <label><input type="radio" value="cat" name="pet">Кошка</label>
+        <label><input type="radio" value="parrot" name="pet">Попугай</label>
+    </p>
+
+    <p>Какой Вам нужен питомец:
+        <label><input checked="checked" type="checkbox" value="dog" name="dog">Собака</label>
+        <label><input type="checkbox" value="cat" name="cat">Кошка</label>
+        <label><input type="checkbox" value="parrot" name="perrot">Попугай</label>
+    </p>
+
+    <p><select size="5" name="city">
+        <option disabled>Выберите город проживания</option>
+        <option selected value="Novosibirsk">Новосибирск</option>
+        <option value="Irkutsk">Иркутск</option>
+        <option value="Kemerovo">Кемерово</option>
+        <option value="Moscow">Москва</option>
+    </select></p>
+
+    <p><select multiple size="5" name="desiredCountry">
+        <option disabled>Выберите страну, куда хотите поехать</option>
+        <option selected value="Russia">Россия</option>
+        <option value="Turkey">Турция</option>
+        <option value="China">Китай</option>
+        <option value="Italy">Италия</option>
+    </select></p>
+
+    <p><b>Введите комментарий:</b></p>
+    <p><textarea name="comment"></textarea></p>
+
+    <p><input type="submit"></p>
+</form>
+
+<a href="Progect1Page2.html">
+    Изучаем HTML (Страница2)
+</a>
+</body>
+</html>
